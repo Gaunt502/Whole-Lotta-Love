@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whole Lotta Love</title>
+    <link rel="stylesheet" href="donut.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <header>
+                <div class="header-container">
+                <h1>Whole Lotta Love</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="flavor.html">Flavors</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+            <section class="menu-cta">
+                <div class="menu-overlay">
+                    <a href="flavor.html">View Our Flavors</a>
+                </div>
+            </section>
+            <br>
+            <!--Image Rows-->
+            <h2>Check Out Our Top Flavors!</h2>
+            <div class="flavor-row">
+                <div class="flavor-item">
+                    <img src="img/Sprinkle Donut.jpg" alt="Chocolate Sprinkle Donut">
+                </div>
+                <div class="flavor-item">
+                    <img src="img/glaze donut dozen.jpg" alt="Glaze Donut">
+                </div>
+                <div class="flavor-item">
+                    <img src="img/Sprinkles.jpg" alt="Vanilla Sprinkle Donut">
+                </div>
+            </div>
+            <section class="reviews">
+                <h2>Hear from Our Customers</h2>
+                <div class="review-card fade-in">
+                    <img src="img/Donut enjoyer.png" alt="Donut Enjoyer">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae quasi iure quis? Exercitationem debitis quam blanditiis neque similique dolores, hic cum a, deserunt voluptatem amet quo, reiciendis eum porro!</blockquote>
+                    <p class="customerName">-John Doe</p>
+                </div>
+                <div class="review-card fade-in">
+                    <img src="img/donut eater.png" alt="Donut Eater">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae quasi iure quis? Exercitationem debitis quam blanditiis neque similique dolores, hic cum a, deserunt voluptatem amet quo, reiciendis eum porro!</blockquote>
+                    <p class="customerName">-Mary Jane</p>
+                </div>
+                <div class="review-card fade-in">
+                    <img src="img/donut muncher.jpg" alt="Donut Muncher">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae quasi iure quis? Exercitationem debitis quam blanditiis neque similique dolores, hic cum a, deserunt voluptatem amet quo, reiciendis eum porro!</blockquote>
+                    <p class="customerName">-Cletus Andrews</p>
+                </div>
+            </section>
+            <br>
+            <section class="miniSum">
+                <div class="miniSum-container fade-in">
+                    <div class="about-text">
+                        <h2>Made With Love</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis totam velit maxime fuga provident,
+                            saepe sunt iusto fugiat dolore error facere explicabo autem sed officiis a id aliquid praesentium debitis.
+                            <a href="about.html" class="learn-more">Learn More -></a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+        </main>
+            <footer>
+                Copyright © 2024 <span class="donut">Whole Lotta Love</span>
+                <br>
+                daniel@dameus.com
+            </footer>
+    </div>
+    <script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
